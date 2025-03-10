@@ -1,0 +1,15 @@
+@mixin button-reset {
+  padding: 0;
+
+  font-family: $basic-font;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

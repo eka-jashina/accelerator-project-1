@@ -3,4 +3,7 @@
 
 @import "vendor/normalize";
 
-@import "global";
+@import "common/variables";
+@import "common/mixins";
+@import "common/fonts";
+@import "common/global";

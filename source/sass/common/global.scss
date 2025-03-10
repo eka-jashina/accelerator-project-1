@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  font-family: $basic-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1366px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
