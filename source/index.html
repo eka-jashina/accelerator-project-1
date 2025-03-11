@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Supergym</title>
     <link rel="stylesheet" href="sass/style.scss">
 </head>
 <body>
   <header class="section hero">
         <div class="container">
             <div class="hero__head">
-                <img class="hero__logo" src="" alt="">
+                <img class="hero__logo" width="130" height="36" type="image/svg+xml" src="img/logo.svg" alt="Логотип фитнес-клуба">
                 <a class="hero__tel" href="tel:+78005555555">8 800 555-55-55</a>
             </div>
-            <div class="hero__content">
-                <h1 class="hero__title">Фитнес Центр</h1>
-                <span class="hero__city">Омск</span>
-                <ul class="hero__description-list">
-                    <li class="hero__description-item">Тренажёрный зал</li>
-                    <li class="hero__description-item">Групповые занятия</li>
-                    <li class="hero__description-item">Кардио-зона</li>
-                </ul>
-                <a class="hero__button">Купить абонемент</a>
+            <div class="hero__main">
+                <div class="hero__content">
+                    <h1 class="hero__title">Фитнес Центр</h1>
+                    <span class="hero__city">Омск</span>
+                    <ul class="hero__description-list">
+                        <li class="hero__description-item">Тренажёрный зал</li>
+                        <li class="hero__description-item">Групповые занятия</li>
+                        <li class="hero__description-item">Кардио-зона</li>
+                    </ul>
+                    <a class="hero__button" href="#">Купить абонемент</a>
+                </div>
+                <picture>
+                    <source width="500" height="524" type="image/webp" media="(min-width: 1366px)" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x">
+                    <source width="324" height="390" type="image/webp" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x">
+                    <source width="500" height="524" type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
+                    <img class="hero__img" src="img/hero-tablet@1x.jpg" srcset="img/hero-tablet@2x.jpg" width="324" height="390" alt="Фотография одного из тренеров фитнес-центра в футболке со знаком супергероя">
+                </picture>
             </div>
-            <img class="hero__img" src="" alt="Фотография одного из тренеров фитнес-центра в футболке со знаком супергероя">
         </div>
     </header>
   <main class="main">
     <section class="section about">
-      <div class="container">
+      <div class="container about__container">
           <div class="about__content">
               <h2 class="section__title about__title">Тренажёрный зал</h2>
               <span class="about__subtitle">Просторный зал площадью 900 кв/м</span>
@@ -37,8 +44,15 @@
                   <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>    
               </div>
           </div>
-          <imgc class="about__img" src="" alt="Тренажерный зал: большое светлое помещение с большим количеством тренажеров">
-          <button class="about__video" type="button"></button>
+          <picture>
+              <source width="660" height="400" type="image/webp" media="(min-width: 1366px)" srcset="img/about-desktop@1x.webp 1x, img/about-desktop@2x.webp 2x">
+                <source width="678" height="345" type="image/webp" media="(min-width: 768px)" srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x">
+              <source width="320" height="280" type="image/webp" srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x">
+              <source width="660" height="400" type="image/jpeg" media="(min-width: 1366px)" srcset="img/about-desktop@1x.jpg 1x, img/about-desktop@2x.jpg 2x">
+                <source width="678" height="345" type="image/jpeg" media="(min-width: 768px)" srcset="img/about-tablet@1x.jpg 1x, img/about-tablet@2x.jpg 2x">
+              <img class="about__img" src="img/about-mobile@1x.jpg" srcset="img/about-mobile@2x.jpg" width="320" height="280" alt="Тренажерный зал: большое светлое помещение с большим количеством тренажеров">
+          </picture>
+          <button class="about__video" type="button">BUTTON!</button>
       </div>
     </section>
     <section class="section price">

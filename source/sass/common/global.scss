@@ -24,17 +24,66 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .main {
   flex-grow: 1;
 }
 
+.section {
+  padding: 100px 0;
+
+  @media (max-width: $tablet) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+}
+
+.section__title {
+  margin: 0;
+  margin-bottom: 20px;
+  
+  font-family: $accent-font;
+  font-size: 54px;
+  line-height: 45px;
+  font-weight: 600;
+  color: #102654;
+  text-align: center;
+
+  @media (max-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
 .container {
   max-width: 1366px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 103px;
+
+  @media (max-width: $tablet) {
+    width: 768px;
+    padding: 0 45px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 320px;
+    padding: 0 15px;
+  }
 }
 
 .visually-hidden {
