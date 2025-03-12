@@ -59,67 +59,67 @@
       <div class="container">
           <h2 class="section__title">Абонементы</h2>
           <div class="price__time">
-            <button class="price__tab">1 месяц</button>
-            <button class="price__tab">6 месяцев</button>
-            <button class="price__tab">12 месяцев</button>
+            <button class="price__tab" id="defaultPriceOpen" onclick="openPrice(event, '1month')">1 месяц</button>
+            <button class="price__tab" onclick="openPrice(event, '6months')">6 месяцев</button>
+            <button class="price__tab" onclick="openPrice(event, '12months')">12 месяцев</button>
           </div>
-          <ul class="price__list">
-            <li class="ppice__card price-card">
+          <ul class="price__list" id="1month">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">С тренером</h3>
                 <p class="price-card__description">12 занятий</p>
-                <span class="price-card__price">5000</span>
+                <span class="price-card__price" data-text="5000">5000</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
-            <li class="ppice__card price-card">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">Дневной</h3>
                 <p class="price-card__description">с 8:00 до 17:00</p>
-                <span class="price-card__price">1700</span>
+                <span class="price-card__price" data-text="1700">1700</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
-            <li class="ppice__card price-card">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">Полный день</h3>
                 <p class="price-card__description">с 8:00 до 22:00</p>
-                <span class="price-card__price">2700</span>
+                <span class="price-card__price" data-text="2700">2700</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
           </ul>
-          <ul class="price__list">
-            <li class="ppice__card price-card">
+          <ul class="price__list" id="6months">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">С тренером</h3>
                 <p class="price-card__description">12 занятий</p>
-                <span class="price-card__price">30000</span>
+                <span class="price-card__price" data-text="30000">30000</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
-            <li class="ppice__card price-card">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">Дневной</h3>
                 <p class="price-card__description">с 8:00 до 17:00</p>
-                <span class="price-card__price">10200</span>
+                <span class="price-card__price" data-text="10200">10200</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
-            <li class="ppice__card price-card">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">Полный день</h3>
                 <p class="price-card__description">с 8:00 до 22:00</p>
-                <span class="price-card__price">16200</span>
+                <span class="price-card__price" data-text="16200">16200</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
           </ul>
-          <ul class="price__list">
-            <li class="ppice__card price-card">
+          <ul class="price__list" id="12months">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">С тренером</h3>
                 <p class="price-card__description">12 занятий</p>
-                <span class="price-card__price">60000</span>
+                <span class="price-card__price" data-text="60000">60000</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
-            <li class="ppice__card price-card">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">Дневной</h3>
                 <p class="price-card__description">с 8:00 до 17:00</p>
-                <span class="price-card__price">20400</span>
+                <span class="price-card__price" data-text="20400">20400</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
-            <li class="ppice__card price-card">
+            <li class="price__card price-card">
                 <h3 class="price-card__title">Полный день</h3>
                 <p class="price-card__description">с 8:00 до 22:00</p>
-                <span class="price-card__price">32400</span>
+                <span class="price-card__price" data-text="32400">32400</span>
                 <a class="price-card__button" href="#">Купить абонемент</a>
             </li>
           </ul>
@@ -478,5 +478,6 @@
             </ul>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

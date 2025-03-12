@@ -24,6 +24,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+  color: #102654;
 
   @media (max-width: $mobile) {
     font-size: 14px;
@@ -55,15 +56,18 @@ body {
   font-size: 54px;
   line-height: 45px;
   font-weight: 600;
-  color: #102654;
   text-align: center;
 
   @media (max-width: $tablet) {
+    margin-bottom: 35px;
+    
     font-size: 42px;
     line-height: 42px;
   }
 
   @media (max-width: $mobile) {
+    margin-bottom: 30px;
+
     font-size: 32px;
     line-height: 32px;
   }
@@ -99,4 +103,9 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

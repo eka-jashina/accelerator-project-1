@@ -19,3 +19,23 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+@mixin link-into-button {
+  @include link-reset;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 66px;
+  padding: 5px;
+
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border: 2px solid $text-light-color;
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, outline 0.3s ease-in-out, border 0.3s ease-in-out;
+}
