@@ -1,0 +1,27 @@
+.games-duration {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.games-duration__title {
+  display: block;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+
+  border-bottom: 1px solid #ffffff;
+}
+
+.games-duration__item--date .games-duration__text {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3px;
+  align-items: center;
+}
+
+.games-duration__day,
+.games-duration__time {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+}

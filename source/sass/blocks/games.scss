@@ -1,0 +1,42 @@
+.games__container {
+  display: grid;
+  grid-template-columns: 5fr 6.6fr;
+}
+
+.games__content {
+  display: grid;
+  grid-template-areas: "title duration" "description description" "button button";
+  gap: 30px 77px;
+  padding: 60px 80px;
+
+  font-size: 18px;
+  color: #ffffff;
+
+  background-color: #ed0233;
+}
+
+.games__title {
+  grid-area: title;
+  margin: 0;
+  
+  font-size: 82px;
+  line-height: 96px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.games__description {
+  grid-area: description;
+  margin: 0;
+}
+
+.games__button {
+  @include link-into-button;
+  @include button-effects-on-dark-background;
+
+  grid-area: button;
+}
+
+.games__img {
+  display: block;
+}

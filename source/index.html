@@ -131,14 +131,28 @@
               <h2 class="section__title games__title">Super Games</h2>
               <p class="games__description">Ежегодные соревнования по CrossFit</p>
               <div class="ganes__duration games-duration">
-                  <span class="games-duration__title">Дата</span>
-                  <span class="games-duration__text">7 Марта 2019</span>
-                  <span class="games-duration__title">Время</span>
-                  <span class="games-duration__text">12:00</span>
+                  <div class="games-duration__item games-duration__item--date">
+                        <span class="games-duration__title">Дата</span>
+                        <span class="games-duration__text">
+                            <span class="games-duration__day">7</span> 
+                            <span class="games-duration__month">Марта 2019</span>
+                        </span>
+                  </div>
+                  <div class="games-duration__item">
+                        <span class="games-duration__title">Время</span>
+                        <span class="games-duration__text games-duration__time">12:00</span>
+                    </div>
               </div>
               <a class="games__button" href="#">Заполнить заявку</a>
           </div>
-          <img class="games__img" src="" alt="">
+            <picture>
+                <source width="660" height="500" type="image/webp" media="(min-width: 1366px)" srcset="img/games-desktop@1x.webp 1x, img/games-desktop@2x.webp 2x">
+                  <source width="378" height="348" type="image/webp" media="(min-width: 768px)" srcset="img/games-tablet@1x.webp 1x, img/games-tablet@2x.webp 2x">
+                <source width="290" height="290" type="image/webp" srcset="img/games-mobile@1x.webp 1x, img/games-mobile@2x.webp 2x">
+                <source width="660" height="500" type="image/jpeg" media="(min-width: 1366px)" srcset="img/games-desktop@1x.jpg 1x, img/games-desktop@2x.jpg 2x">
+                  <source width="378" height="348" type="image/jpeg" media="(min-width: 768px)" srcset="img/games-tablet@1x.jpg 1x, img/games-tablet@2x.jpg 2x">
+                <img class="games__img" src="img/games-mobile@1x.jpg" srcset="img/games-mobile@2x.jpg" width="290" height="290" alt="Тренажерный зал: большое светлое помещение с большим количеством тренажеров">
+            </picture>
       </div>
     </section>
     <section class="section juri">

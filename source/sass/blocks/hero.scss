@@ -165,31 +165,10 @@
 
 .hero__button {
   @include link-into-button;
+  @include button-effects-on-dark-background;
 
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-
-  &:hover {
-    color: #103aae;
-    background-color: #ffffff;
-  }
-
-  &:focus-visible {
-    color: #103aae;
-    background-color: rgba(255, 255, 255, 0.8);
-    outline: 2px solid #000000;
-  }
-
-  &:active {
-    color: #102654;
-    background-color: #ffffff;
-    outline: none;
-  }
-
-  &:not([href]) {
-    opacity: 0.5;
-    pointer-events: none;
-  }
 
   @media (max-width: $tablet) {
     min-height: 56px;

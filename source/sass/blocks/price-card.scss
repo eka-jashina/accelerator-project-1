@@ -1,20 +1,32 @@
 .price-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 17px;
   padding: 65px;
-
   background-color: #ffffff;
+  z-index: 1;
+}
 
-  @media (max-width: $tablet) {
-    row-gap: 22px;
-  }
+.price-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 7px;
+  background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  mask: 
+    linear-gradient(#ffffff 0 0) content-box, 
+    linear-gradient(#ffffff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
 
-  @media (max-width: $mobile) {
-    row-gap: 18px;
-    padding: 50px 42px;
-  }
+.price-card:has(.price-card__button:hover)::before,
+.price-card:has(.price-card__button:focus-visible)::before {
+  opacity: 1;
 }
 
 .price-card__title {
@@ -99,52 +111,7 @@
 
 .price-card__button {
   @include link-into-button;
-
-  position: relative;
-  z-index: 1;
+  @include button-effects-on-light-background;
 
   border-color: #102654;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-    opacity: 0;
-
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  &:hover {
-    color: #ffffff;
-    border: none;
-
-    &::before {
-      opacity: 1;
-    }
-  }
-
-  &:focus-visible {
-    color: #ffffff;
-    outline: 2px solid #000000;
-
-    &::before {
-      opacity: 0.8;
-    }
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.7);
-
-    &::before {
-      opacity: 1;
-    }
-  }
-
-  &:not([href]) {
-    opacity: 0.3;
-    pointer-events: none;
-  }
 }

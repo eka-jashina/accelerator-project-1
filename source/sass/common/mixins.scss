@@ -39,3 +39,75 @@
 
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, outline 0.3s ease-in-out, border 0.3s ease-in-out;
 }
+
+@mixin button-effects-on-dark-background {
+  &:hover {
+    color: #103aae;
+    background-color: #ffffff;
+  }
+
+  &:focus-visible {
+    color: #103aae;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: 2px solid #000000;
+  }
+
+  &:active {
+    color: #102654;
+    background-color: #ffffff;
+    outline: none;
+  }
+
+  &:not([href]) {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+@mixin button-effects-on-light-background {
+  position: relative;
+  z-index: 1;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    opacity: 0;
+
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: #ffffff;
+    border: none;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    color: #ffffff;
+    outline: 2px solid #000000;
+
+    &::before {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:not([href]) {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
