@@ -2,6 +2,15 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+
+  font-weight: 400;
+
+  @media (max-width: $tablet) {
+    row-gap: 10px;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .games-duration__title {
@@ -10,6 +19,11 @@
   margin-bottom: 6px;
 
   border-bottom: 1px solid #ffffff;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 4px;
+    margin-bottom: 0;
+  }
 }
 
 .games-duration__item--date .games-duration__text {
@@ -24,4 +38,9 @@
   font-size: 40px;
   line-height: 40px;
   font-weight: 700;
+
+  @media (max-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

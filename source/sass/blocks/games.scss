@@ -1,6 +1,13 @@
 .games__container {
   display: grid;
   grid-template-columns: 5fr 6.6fr;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 3fr 3.8fr;
+  }
+    @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .games__content {
@@ -13,6 +20,16 @@
   color: #ffffff;
 
   background-color: #ed0233;
+
+  @media (max-width: $tablet) {
+    padding: 40px;
+    gap: 10px 20px;
+  }
+
+
+  @media (max-width: $mobile) {
+    gap: 16px 37px;
+  }
 }
 
 .games__title {
@@ -21,8 +38,14 @@
   
   font-size: 82px;
   line-height: 96px;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: left;
+
+  @media (max-width: $tablet) {
+    font-size: 48px;
+    line-height: 54px;
+  }
 }
 
 .games__description {

@@ -1,0 +1,18 @@
+.offers__title {
+    margin-bottom: 70px;
+}
+
+.offers__list {
+    @include list-reset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.offers__item {
+    align-self: end;
+}
+
+.offers__item--accent {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
