@@ -1,0 +1,93 @@
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: #14367a;
+        opacity: 0.5;
+    }
+}
+
+.video__button {
+    @include button-reset; 
+
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+    padding: 14px;
+
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background-clip: content-box;
+
+    border-radius: 50%;
+    border: 2px solid rgba(237, 2, 51, 0.2);
+
+    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out, border 0.3s ease-in-out;
+
+    &:hover {
+        background: none;
+        border: 2px solid #102654;
+        opacity: 0.6;
+
+        &::before {
+            background: #102654;
+        }
+    }
+
+    &:focus-visible {
+        background: #C8C9CC;
+        background-clip: content-box;
+        border: 2px solid #102654;
+        opacity: 1;
+        outline: none;
+
+        &::before {
+            background: #102654;
+        }
+    }
+
+    &:active {
+        background: none;
+        border: 2px solid #102654;
+        opacity: 1;
+
+        &::before {
+            background: #102654;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        width: 72px;
+        height: 72px;
+        padding: 10px;
+    }
+}
+
+.video__button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 17px;
+    height: 17px;
+
+    background: #ffffff;
+
+    transition: background 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}

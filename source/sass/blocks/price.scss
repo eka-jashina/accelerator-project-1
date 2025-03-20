@@ -2,38 +2,24 @@
   background-color: #f8f9fc;
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-image: url("../../img/price-bg-decor-desktop@1x.webp");
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/price-bg-decor-desktop@2x.webp");
-  }
-
-  @supports not (background-image: url("../../img/price-bg-decor-desktop@1x.webp")) {
-    background-image: url("../../img/price-bg-decor-desktop@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/price-bg-decor-desktop@2x.png");
-    }
-  }
+  background-image: image-set(
+    url("../../img/price-bg-decor-desktop@1x.webp") type("image/webp") 1x,
+    url("../../img/price-bg-decor-desktop@2x.webp") type("image/webp") 2x,
+    url("../../img/price-bg-decor-desktop@1x.png") type("image/png") 1x,
+    url("../../img/price-bg-decor-desktop@2x.png") type("image/png") 2x
+  );
 
   @media (max-width: $tablet) {
-    background-image: url("../../img/price-bg-decor-tablet@1x.webp");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/price-bg-decor-tablet@2x.webp");
-    }
-
-    @supports not (background-image: url("../../img/price-bg-decor-tablet@1x.webp")) {
-      background-image: url("../../img/price-bg-decor-tablet@1x.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/price-bg-decor-tablet@2x.png");
-      }
-    }
+    background-image: image-set(
+      url("../../img/price-bg-decor-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/price-bg-decor-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/price-bg-decor-tablet@1x.png") type("image/png") 1x,
+      url("../../img/price-bg-decor-tablet@2x.png") type("image/png") 2x
+    );  
   }
 
   @media (max-width: $mobile) {
-  background-image: none;
+    background-image: none;
   }
 }
 
