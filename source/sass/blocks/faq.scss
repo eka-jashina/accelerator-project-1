@@ -5,7 +5,7 @@
 .faq__container {
     display: grid;
     grid-template-columns: 260px auto;
-    row-gap: 40px;
+    column-gap: 40px;
 }
 
 .faq__title {
@@ -17,13 +17,15 @@
     @include list-reset;
 
     display: grid;
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    align-self: start;
     gap: 10px;
 }
 
 .faq__tab {
     @include button-reset;
 
+    width: 100%;
     min-height: 54px;
 
     font-size: 18px;
@@ -31,4 +33,12 @@
     font-weight: 400;
     
     border: 1px solid rgba(16, 38, 84, 0.2)
+}
+
+.faq__answers-list {
+    @include list-reset;
+
+    border-top: 1px solid #74819C;
+
+    animation: fadeEffect 1s;
 }

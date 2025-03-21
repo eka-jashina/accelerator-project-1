@@ -16,3 +16,23 @@ function openPrice(evt, priceNumber) {
 } 
 
 document.getElementById("defaultPriceOpen").click();
+
+function openAnswers(evt, answersContent) {
+  var i, answersList, faqTab;
+
+  answersList = document.getElementsByClassName("faq__answers-list");
+  for (i = 0; i < answersList.length; i++) {
+    answersList[i].style.display = "none";
+  }
+
+  faqTab = document.getElementsByClassName("faq__tab");
+  for (i = 0; i < faqTab.length; i++) {
+    faqTab[i].className = faqTab[i].className.replace(" active", "");
+  }
+
+  document.getElementById(answersContent).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+
+document.getElementById("defaultAnswersOpen").click();
+

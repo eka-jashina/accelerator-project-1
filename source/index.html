@@ -319,122 +319,124 @@
           <h2 class="section__title faq__title">Вопросы и ответы</h2>
           <ul class="faq__topics-list">
               <li class="faq__topic">
-                  <button class="faq__tab">Центр</button>
+                  <button class="faq__tab" id="defaultAnswersOpen" onclick="openAnswers(event, 'center')">Центр</button>
               </li>
               <li class="faq__topic">
-                  <button class="faq__tab">Абонемент</button>
+                  <button class="faq__tab" onclick="openAnswers(event, 'membership')">Абонемент</button>
               </li>
               <li class="faq__topic">
-                  <button class="faq__tab">Услуги</button>
+                  <button class="faq__tab" onclick="openAnswers(event, 'service')">Услуги</button>
               </li>
               <li class="faq__topic">
-                  <button class="faq__tab">Правила</button>
+                  <button class="faq__tab" onclick="openAnswers(event, 'rules')">Правила</button>
               </li>
           </ul>
-          <ul class="faq__answers-list">
-              <li class="faq__answer answer">
-                  <details class="answer__content" open>
-                      <summary>Как стать членом фитнес-центра?</summary>
-                      <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Где можно посмотреть расписание?</summary>
-                      <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Есть кулеры в центре? Предоставляются полотенца?</summary>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis consequuntur, velit illum eius rem repellat tenetur recusandae magni est voluptate quidem, quia architecto natus similique, ipsum officiis modi ut ab?</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Сколько тренеров работает в клубе и какова их квалификация?</summary>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, odio! Sint, eius reiciendis accusamus facilis eum esse laboriosam cumque neque corporis sed. Ab dolore, ipsa quis voluptatum aspernatur sint omnis?</p>
-                  </details>
-              </li>
-          </ul>
-          <ul class="faq__answers-list">
-              <li class="faq__answer answer">
-                  <details class="answer__content" open>
-                      <summary>Занятия с тренером входят в абонемент?</summary>
-                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Можно ли заморозить абонемент?</summary>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic fugit provident accusantium soluta laborum officiis tempore atque temporibus saepe, omnis quae deleniti explicabo. Voluptatibus consequuntur molestiae maiores asperiores laborum.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</summary>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste, perferendis, commodi ad blanditiis incidunt corrupti debitis temporibus, odio architecto qui aperiam? Esse possimus officiis ea distinctio magni debitis saepe.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Что такое семейный доступ и доступ для друзей?</summary>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia quo, eveniet ratione magni aperiam dolore officia quasi eos expedita dolor magnam, recusandae quis vitae aliquam tempora, quos commodi asperiores!</p>
-                  </details>
-              </li>
-          </ul>
-          <ul class="faq__answers-list">
-              <li class="faq__answer answer">
-                  <details class="answer__content" open>
-                      <summary>Предлагает ли клуб услуги по консультированию по вопросам питания?</summary>
-                      <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Проводятся ли в клубе какие-либо мероприятия или соревнования?</summary>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic fugit provident accusantium soluta laborum officiis tempore atque temporibus saepe, omnis quae deleniti explicabo. Voluptatibus consequuntur molestiae maiores asperiores laborum.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Можно ли приобрести в центре спортивное питание?</summary>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste, perferendis, commodi ad blanditiis incidunt corrupti debitis temporibus, odio architecto qui aperiam? Esse possimus officiis ea distinctio magni debitis saepe.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class="answer__content">
-                      <summary>Есть ли в центре детская комната?</summary>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia quo, eveniet ratione magni aperiam dolore officia quasi eos expedita dolor magnam, recusandae quis vitae aliquam tempora, quos commodi asperiores!</p>
-                  </details>
-              </li>
-          </ul>
-          <ul class="faq__answers-list">
-              <li class="faq__answer answer">
-                  <details class=""answer__content open>
-                      <summary>Есть в фитнес-центре дресс-код?</summary>
-                      <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class=""answer__content>
-                      <summary>Можно ли приводить с собой детей на тренировки?</summary>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic fugit provident accusantium soluta laborum officiis tempore atque temporibus saepe, omnis quae deleniti explicabo. Voluptatibus consequuntur molestiae maiores asperiores laborum.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class=""answer__content>
-                      <summary>Какие дополнительные правила посещения центра?</summary>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste, perferendis, commodi ad blanditiis incidunt corrupti debitis temporibus, odio architecto qui aperiam? Esse possimus officiis ea distinctio magni debitis saepe.</p>
-                  </details>
-              </li>
-              <li class="faq__answer answer">
-                  <details class=""answer__content>
-                      <summary>Нужна ли медицинская справка для посещения залов и бассейна?</summary>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia quo, eveniet ratione magni aperiam dolore officia quasi eos expedita dolor magnam, recusandae quis vitae aliquam tempora, quos commodi asperiores!</p>
-                  </details>
-              </li>
-          </ul>
+          <div class="faq__answers">
+            <ul class="faq__answers-list" id="center">
+                <li class="faq__answer answer">
+                    <details class="answer__content" open>
+                        <summary>Как стать членом фитнес-центра?</summary>
+                        <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary class="summary">Где можно посмотреть расписание?</summary>
+                        <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Есть кулеры в центре? Предоставляются полотенца?</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis consequuntur, velit illum eius rem repellat tenetur recusandae magni est voluptate quidem, quia architecto natus similique, ipsum officiis modi ut ab?</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Сколько тренеров работает в клубе и какова их квалификация?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, odio! Sint, eius reiciendis accusamus facilis eum esse laboriosam cumque neque corporis sed. Ab dolore, ipsa quis voluptatum aspernatur sint omnis?</p>
+                    </details>
+                </li>
+            </ul>
+            <ul class="faq__answers-list" id="membership">
+                <li class="faq__answer answer">
+                    <details class="answer__content" open>
+                        <summary>Занятия с тренером входят в абонемент?</summary>
+                        <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Можно ли заморозить абонемент?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic fugit provident accusantium soluta laborum officiis tempore atque temporibus saepe, omnis quae deleniti explicabo. Voluptatibus consequuntur molestiae maiores asperiores laborum.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</summary>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste, perferendis, commodi ad blanditiis incidunt corrupti debitis temporibus, odio architecto qui aperiam? Esse possimus officiis ea distinctio magni debitis saepe.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Что такое семейный доступ и доступ для друзей?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia quo, eveniet ratione magni aperiam dolore officia quasi eos expedita dolor magnam, recusandae quis vitae aliquam tempora, quos commodi asperiores!</p>
+                    </details>
+                </li>
+            </ul>
+            <ul class="faq__answers-list" id="service">
+                <li class="faq__answer answer">
+                    <details class="answer__content" open>
+                        <summary>Предлагает ли клуб услуги по консультированию по вопросам питания?</summary>
+                        <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Проводятся ли в клубе какие-либо мероприятия или соревнования?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic fugit provident accusantium soluta laborum officiis tempore atque temporibus saepe, omnis quae deleniti explicabo. Voluptatibus consequuntur molestiae maiores asperiores laborum.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Можно ли приобрести в центре спортивное питание?</summary>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste, perferendis, commodi ad blanditiis incidunt corrupti debitis temporibus, odio architecto qui aperiam? Esse possimus officiis ea distinctio magni debitis saepe.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Есть ли в центре детская комната?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia quo, eveniet ratione magni aperiam dolore officia quasi eos expedita dolor magnam, recusandae quis vitae aliquam tempora, quos commodi asperiores!</p>
+                    </details>
+                </li>
+            </ul>
+            <ul class="faq__answers-list" id="rules">
+                <li class="faq__answer answer">
+                    <details class="answer__content" open>
+                        <summary>Есть в фитнес-центре дресс-код?</summary>
+                        <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Можно ли приводить с собой детей на тренировки?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni hic fugit provident accusantium soluta laborum officiis tempore atque temporibus saepe, omnis quae deleniti explicabo. Voluptatibus consequuntur molestiae maiores asperiores laborum.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Какие дополнительные правила посещения центра?</summary>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste, perferendis, commodi ad blanditiis incidunt corrupti debitis temporibus, odio architecto qui aperiam? Esse possimus officiis ea distinctio magni debitis saepe.</p>
+                    </details>
+                </li>
+                <li class="faq__answer answer">
+                    <details class="answer__content">
+                        <summary>Нужна ли медицинская справка для посещения залов и бассейна?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia quo, eveniet ratione magni aperiam dolore officia quasi eos expedita dolor magnam, recusandae quis vitae aliquam tempora, quos commodi asperiores!</p>
+                    </details>
+                </li>
+            </ul>
+          </div>
       </div>
     </section>
     <section class="section reviews">
