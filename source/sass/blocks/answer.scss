@@ -1,0 +1,182 @@
+.answer {
+  padding: 23px 0 22px 0;
+
+  border-bottom: 1px solid #74819c;
+
+  @media (max-width: $mobile) {
+    padding: 20px 0;
+  }
+}
+
+.answer button {
+  @include button-reset;
+
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 95px 8px 0;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: 1px solid #1c3374;
+
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: -1;
+
+    width: 20px;
+    height: 20px;
+
+    background: linear-gradient(
+        to right,
+        transparent 9px,
+        #1c3374 10px,
+        transparent 11px
+      ),
+      linear-gradient(
+        to bottom,
+        transparent 9px,
+        #1c3374 10px,
+        transparent 11px
+      );
+
+    transform: translateY(-50%);
+    transition: background 0.3s ease-in-out;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 4px 95px 4px 0;
+
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 52px 0 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.answer button.active {
+  &::before {
+    background-color: #1c3374;
+  }
+
+  &::after {
+    background: linear-gradient(
+      to bottom,
+      transparent 9px,
+      #ffffff 10px,
+      transparent 11px
+    );
+  }
+}
+
+.answer button:hover {
+  &::before {
+    background-color: #1c3374;
+  }
+
+  &::after {
+    background: linear-gradient(
+      to right,
+      transparent 9px,
+      #ffffff 10px,
+      transparent 11px
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 9px,
+      #ffffff 10px,
+      transparent 11px
+    );
+  }
+}
+
+.answer button:focus-visible {
+  outline: 0;
+  &::before {
+    background-color: #74819C;
+  }
+
+  &::after {
+    background: linear-gradient(
+      to right,
+      transparent 9px,
+      #ffffff 10px,
+      transparent 11px
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 9px,
+      #ffffff 10px,
+      transparent 11px
+    );
+  }
+}
+
+.answer__text {
+  max-width: 650px;
+  max-height: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+
+  @media (max-width: $tablet) {
+    max-width: 570px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 260px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.answer__text p {
+  margin: 0;
+}
+
+.answer__text p:first-child {
+  padding-top: 23px;
+
+  @media (max-width: $tablet) {
+    padding-top: 10px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 20px;
+  }
+}
+
+.answer__text p:not(:last-child) {
+  margin-bottom: 8px;
+}
