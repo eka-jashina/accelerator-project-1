@@ -7,6 +7,7 @@
   padding: 65px;
   background-color: #ffffff;
   z-index: 1;
+<<<<<<< HEAD
 
   @media (max-width: $tablet) {
     row-gap: 22px;
@@ -16,6 +17,8 @@
     row-gap: 21px;
     padding: 50px 42px;
   }
+=======
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
 }
 
 .price-card::before {
@@ -24,8 +27,13 @@
   inset: 0;
   padding: 7px;
   background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+<<<<<<< HEAD
   mask:
     linear-gradient(#ffffff 0 0) content-box,
+=======
+  mask: 
+    linear-gradient(#ffffff 0 0) content-box, 
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     linear-gradient(#ffffff 0 0);
   mask-composite: exclude;
   opacity: 0;
@@ -65,7 +73,11 @@
 
   padding-top: 60px;
   padding-right: 44px;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   font-size: 60px;
   line-height: 150%;
   font-weight: 700;
@@ -74,10 +86,17 @@
   &::before {
     content: attr(data-text);
     position: absolute;
+<<<<<<< HEAD
     top: 0;
     left: -20px;
     z-index: -1;
 
+=======
+    top: -10px;
+    left: -20px;
+    z-index: -1;
+    
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     font-size: 100px;
     line-height: 150%;
     font-weight: 700;
@@ -89,10 +108,17 @@
     position: absolute;
     right: 0;
     bottom: 24px;
+<<<<<<< HEAD
 
     width: 30px;
     height: 42px;
 
+=======
+    
+    width: 30px;
+    height: 42px;
+    
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,6 +126,7 @@
   }
 
   @media (max-width: $mobile) {
+<<<<<<< HEAD
     padding-top: 39px;
     padding-right: 34px;
 
@@ -109,12 +136,24 @@
       top: -10px;
       left: -15px;
 
+=======
+    padding-top: 48px;
+    padding-right: 34px;
+    
+    font-size: 48px;
+
+    &::before {
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
       font-size: 80px;
     }
 
     &::after {
       bottom: 19px;
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
       width: 24px;
       height: 33px;
     }
@@ -126,4 +165,8 @@
   @include button-effects-on-light-background;
 
   border-color: #102654;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d

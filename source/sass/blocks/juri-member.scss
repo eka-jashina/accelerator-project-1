@@ -1,6 +1,7 @@
 .juri-member {
     position: relative;
 
+<<<<<<< HEAD
     width: 260px;
     max-width: 260px;
 
@@ -9,6 +10,13 @@
     &:focus-visible {
       outline: 0;
   }
+=======
+    color: #ffffff;
+}
+
+.juri-member:focus-visible {
+    outline: 0;
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
 }
 
 .juri-member__wrapper {
@@ -83,4 +91,8 @@
     font-weight: 400;
 
     list-style-type: disc;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d

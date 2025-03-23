@@ -22,7 +22,11 @@
 
 @mixin link-into-button {
   @include link-reset;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +41,11 @@
 
   border: 2px solid $text-light-color;
 
+<<<<<<< HEAD
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, border 0.3s ease-in-out;
+=======
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, outline 0.3s ease-in-out, border 0.3s ease-in-out;
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
 }
 
 @mixin button-effects-on-dark-background {
@@ -49,14 +57,22 @@
   &:focus-visible {
     color: #103aae;
     background-color: rgba(255, 255, 255, 0.8);
+<<<<<<< HEAD
     border: 2px solid #000000;
     outline: 0;
+=======
+    outline: 2px solid #000000;
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   }
 
   &:active {
     color: #102654;
     background-color: #ffffff;
+<<<<<<< HEAD
     border: 2px solid $text-light-color;
+=======
+    outline: none;
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   }
 
   &:not([href]) {
@@ -68,7 +84,11 @@
 @mixin button-effects-on-light-background {
   position: relative;
   z-index: 1;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   &::before {
     content: "";
     position: absolute;
@@ -92,7 +112,11 @@
 
   &:focus-visible {
     color: #ffffff;
+<<<<<<< HEAD
     border: 2px solid #000000;
+=======
+    outline: 2px solid #000000;
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
 
     &::before {
       opacity: 0.8;
@@ -101,7 +125,10 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.7);
+<<<<<<< HEAD
     border: none;
+=======
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
 
     &::before {
       opacity: 1;
@@ -119,7 +146,11 @@
 
   &:hover {
       color: rgba(28, 51, 116, 0.8);
+<<<<<<< HEAD
       border-bottom: 1px solid #1C3374;
+=======
+      border-bottom: 1px solid #1C3374;    
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   }
 
   &:focus-visible {
@@ -161,3 +192,24 @@
     pointer-events: none;
   }
 }
+<<<<<<< HEAD
+=======
+
+@mixin stretch-background-in-mobile-version {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    left: -100vw;
+    z-index: -1;
+
+    width: 200vw;
+    height: 100%;
+
+    background-color: inherit;
+}
+}
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d

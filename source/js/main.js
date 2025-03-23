@@ -13,19 +13,27 @@ function openPrice(evt, priceNumber) {
 
   document.getElementById(priceNumber).style.display = "grid";
   evt.currentTarget.className += " active";
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
 
 document.getElementById("defaultPriceOpen").click();
 
 function openAnswers(evt, answersContent) {
   var i, answersList, faqTab;
 
+<<<<<<< HEAD
   // Скрываем все списки ответов
+=======
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   answersList = document.getElementsByClassName("faq__answers-list");
   for (i = 0; i < answersList.length; i++) {
     answersList[i].style.display = "none";
   }
 
+<<<<<<< HEAD
   // Убираем класс "active" у всех табов
   faqTab = document.getElementsByClassName("faq__tab");
   for (i = 0; i < faqTab.length; i++) {
@@ -129,4 +137,16 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+=======
+  faqTab = document.getElementsByClassName("faq__tab");
+  for (i = 0; i < faqTab.length; i++) {
+    faqTab[i].className = faqTab[i].className.replace(" active", "");
+  }
+
+  document.getElementById(answersContent).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+
+document.getElementById("defaultAnswersOpen").click();
+>>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
 
