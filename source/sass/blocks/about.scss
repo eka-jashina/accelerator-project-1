@@ -28,11 +28,7 @@
 
 .about__content {
   max-width: 355px;
-<<<<<<< HEAD
   padding-bottom: 119px;
-=======
-  padding-bottom: 115px;
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
 
   @media (max-width: $tablet) {
     margin-bottom: 36px;
@@ -46,29 +42,17 @@
 }
 
 .about__title {
-<<<<<<< HEAD
   margin-bottom: 30px;
 
-=======
-  margin-bottom: 25px;
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   text-align: left;
 
   @media (max-width: $tablet) {
     margin-bottom: 20px;
-<<<<<<< HEAD
-
-=======
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     text-align: center;
   }
 
   @media (max-width: $mobile) {
     margin-bottom: 12px;
-<<<<<<< HEAD
-
-=======
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     text-align: left;
   }
 }
@@ -76,22 +60,12 @@
 .about__subtitle {
   display: block;
   margin-bottom: 95px;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   font-size: 22px;
   line-height: 22px;
   font-weight: 400;
 
   @media (max-width: $tablet) {
     margin-bottom: 36px;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -172,11 +146,6 @@
 
   @media (max-width: $mobile) {
     position: relative;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     width: 320px;
     height: 170px;
 
@@ -187,8 +156,4 @@
       url("../../img/about-video-mobile@2x.jpg") type("image/jpeg") 2x
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d

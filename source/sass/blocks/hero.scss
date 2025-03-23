@@ -1,16 +1,9 @@
 .hero {
   padding-top: 0;
-<<<<<<< HEAD
   padding-bottom: 118px;
 
   color: $text-light-color;
 
-=======
-  padding-bottom: 120px;
-  
-  color: $text-light-color;
-  
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 
   @media (max-width: $tablet) {
@@ -29,13 +22,10 @@
   padding: 30px 0;
   margin-bottom: 30px;
 
-<<<<<<< HEAD
   @media (max-width: $tablet) {
     margin-bottom: 0;
   }
 
-=======
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   @media (max-width: $mobile) {
     padding: 16px 0;
     margin-bottom: 48px;
@@ -97,17 +87,11 @@
   justify-content: center;
   align-items: center;
   column-gap: 56px;
-<<<<<<< HEAD
   padding-left: 75px;
 
   @media (max-width: $tablet) {
     column-gap: 30px;
     padding-left: 0;
-=======
-
-  @media (max-width: $tablet) {
-    column-gap: 30px;
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   }
 
   @media (max-width: $mobile) {
@@ -138,32 +122,21 @@
 .hero__city {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   font-family: $accent-font;
   font-size: 54px;
   line-height: 54px;
   font-weight: 600;
 
   @media (max-width: $tablet) {
-<<<<<<< HEAD
     margin-bottom: 9px;
 
-=======
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     font-size: 42px;
     line-height: 42px;
   }
 
   @media (max-width: $mobile) {
-<<<<<<< HEAD
     margin-bottom: 0;
 
-=======
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     font-size: 32px;
     line-height: 32px;
   }
@@ -173,11 +146,6 @@
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   margin: 0;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   font-family: $accent-font;
   font-size: 92px;
   line-height: 110px;
@@ -188,11 +156,6 @@
 
   @media (max-width: $tablet) {
     margin-bottom: 50px;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 2px;
@@ -200,11 +163,6 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 34px;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     font-size: 62px;
     line-height: 62px;
     letter-spacing: 1px;
@@ -231,11 +189,6 @@
 
 .hero__description-list {
   @include list-reset;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
   grid-column: 1 / 2;
   grid-row: 1 / 4;
 
@@ -244,7 +197,6 @@
   font-weight: 400;
   text-align: right;
 
-<<<<<<< HEAD
   @media (max-width: $tablet) {
     padding-top: 1px;
   }
@@ -253,11 +205,6 @@
     grid-row: 1 / 3;
     align-self: end;
     padding-top: 0;
-=======
-  @media (max-width: $mobile) {
-    grid-row: 1 / 3;
-    align-self: end;
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
     margin-bottom: 34px;
     line-height: 20px;
   }
@@ -269,8 +216,4 @@
   @media (max-width: $mobile) {
     display: none;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e820aff1e17486f3eb31db6fcae5394d798ce76d
