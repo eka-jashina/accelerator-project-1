@@ -3,6 +3,14 @@
 
   border-bottom: 1px solid #74819c;
 
+  @media (max-width: $tablet) {
+    padding: 23px 0;
+
+    &:last-child {
+      padding: 18.5px 0;
+    }
+  }
+
   @media (max-width: $mobile) {
     padding: 20px 0;
   }
@@ -27,7 +35,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -1px;
     z-index: -1;
 
     width: 40px;
@@ -44,7 +52,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 9px;
     z-index: -1;
 
     width: 20px;
@@ -68,7 +76,7 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 4px 95px 4px 0;
+    padding: 5px 95px 4px 0;
 
     font-size: 22px;
     line-height: 22px;
