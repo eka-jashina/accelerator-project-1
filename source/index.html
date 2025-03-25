@@ -79,9 +79,9 @@
       <div class="container">
         <h2 class="section__title price__title">Абонементы</h2>
         <div class="price__time">
-          <button class="price__tab" id="defaultPriceOpen" onclick="openPrice(event, '1month')">1 месяц</button>
-          <button class="price__tab" onclick="openPrice(event, '6months')">6 месяцев</button>
-          <button class="price__tab" onclick="openPrice(event, '12months')">12 месяцев</button>
+          <button class="price__tab" id="defaultPriceOpen" data-target="1month">1 месяц</button>
+          <button class="price__tab" data-target="6months">6 месяцев</button>
+          <button class="price__tab" data-target="12months">12 месяцев</button>
         </div>
         <ul class="price__list" id="1month">
           <li class="price__card price-card">
@@ -438,16 +438,16 @@
         <h2 class="section__title faq__title">Вопросы и ответы</h2>
         <ul class="faq__topics-list">
           <li class="faq__topic">
-            <button class="faq__tab" id="defaultAnswersOpen" onclick="openAnswers(event, 'center')">Центр</button>
+            <button class="faq__tab" data-target="center" id="defaultAnswersOpen">Центр</button>
           </li>
           <li class="faq__topic">
-            <button class="faq__tab" onclick="openAnswers(event, 'membership')">Абонемент</button>
+            <button class="faq__tab" data-target="membership">Абонемент</button>
           </li>
           <li class="faq__topic">
-            <button class="faq__tab" onclick="openAnswers(event, 'service')">Услуги</button>
+            <button class="faq__tab" data-target="service">Услуги</button>
           </li>
           <li class="faq__topic">
-            <button class="faq__tab" onclick="openAnswers(event, 'rules')">Правила</button>
+            <button class="faq__tab" data-target="rules">Правила</button>
           </li>
         </ul>
         <div class="faq__answers">
@@ -709,7 +709,7 @@
     </div>
   </footer>
   <script src="js/vendor/swiper.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

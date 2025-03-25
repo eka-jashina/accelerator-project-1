@@ -23,4 +23,4 @@ function loadVideo() {
   videoContainer.appendChild(iframe);
 }
 
-videoButton.addEventListener("click", loadVideo);
+export { videoButton, loadVideo }

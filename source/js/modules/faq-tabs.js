@@ -1,7 +1,9 @@
-const answersList = document.getElementsByClassName("faq__answers-list");
-const faqTab = document.getElementsByClassName("faq__tab");
+import { openAccordion } from './faq-accordion.js'
 
-function openAnswers(evt, answersContent) {
+function openAnswersTab(evt, answersContent) {
+  const answersList = document.getElementsByClassName("faq__answers-list");
+  const faqTab = document.getElementsByClassName("faq__tab");
+
   // Скрываем все списки ответов
   for (let i = 0; i < answersList.length; i++) {
     answersList[i].style.display = "none";
@@ -26,36 +28,4 @@ function openAnswers(evt, answersContent) {
   }
 }
 
-// Функция для открытия аккордеона
-function openAccordion(button) {
-  var panel = button.nextElementSibling;
-  button.classList.add("active");
-  panel.style.maxHeight = panel.scrollHeight + "px";
-}
-
-// Функция для переключения аккордеона (открытие/закрытие)
-function toggleAccordion(button) {
-  var panel = button.nextElementSibling;
-  var isActive = button.classList.contains("active");
-
-  if (isActive) {
-    button.classList.remove("active");
-    panel.style.maxHeight = null;
-  } else {
-    openAccordion(button);
-  }
-}
-
-// Обработчик событий для аккордеонов
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".faq__answers-list").forEach((list) => {
-    list.addEventListener("click", function (event) {
-      if (event.target.tagName === "BUTTON") {
-        toggleAccordion(event.target);
-      }
-    });
-  });
-
-  // Открываем вкладку по умолчанию
-  document.getElementById("defaultAnswersOpen").click();
-});
+export { openAnswersTab }
