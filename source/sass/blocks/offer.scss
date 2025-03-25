@@ -84,6 +84,10 @@
   line-height: 24px;
 }
 
+.offer p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .offer--accent p {
   font-size: 18px;
 

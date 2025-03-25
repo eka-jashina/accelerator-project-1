@@ -1,0 +1,54 @@
+.communication {
+    padding: 60px 0;
+
+    background-color: #102654;
+}
+
+.communication__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.communication__title {
+    margin-bottom: 38px;
+}
+
+.communication__callback {
+    color: #ffffff;
+}
+
+.communication__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 38px;
+}
+
+.communication__button {
+    @include button-resrt;
+    @include button-effects-on-dark-background;
+
+    width: 100%;
+  min-height: 66px;
+  padding: 5px;
+
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border: 2px solid $text-light-color;
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.communication__input {
+    padding-bottom: 4px;
+    min-width: 223px;
+
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+
+    border-bottom: 1px solid #74819C;
+}

@@ -109,6 +109,10 @@
   }
 }
 
+.features__item p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .features__item--accent {
   grid-column: 2 / 3;
   grid-row: 1 / 3;

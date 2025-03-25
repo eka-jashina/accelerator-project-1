@@ -594,10 +594,13 @@
     </section>
     <section class="section reviews" data-test="reviews">
       <div class="container">
-        <h2 class="section__title">Отзывы</h2>
-        <ul class="reviews__list">
+        <h2 class="section__title reviews__title">Отзывы</h2>
+      </div>
+      <div class="container reviews__container">
+        <div class="reviews__swiper swiper">
+          <ul class="reviews__list swiper-wrapper">
           <li class="reviews__item review">
-            <img src="" alt="">
+            <img src="" width="80" height="80" alt="Анна Орлова">
             <div class="review__content">
               <h3>Анна Орлова</h3>
               <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
@@ -605,28 +608,45 @@
             </div>
           </li>
           <li class="reviews__item review">
-            <img src="" alt="">
+            <img src="" width="80" height="80" alt="Анна Орлова">
             <div class="review__content">
               <h3>Анна Орлова</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, dolorum, eius unde voluptatibus alias
+                natus cum sequi soluta at fuga hic, facere amet! Commodi, sit aperiam tempora soluta in maxime.</p>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, dolorum, eius unde voluptatibus alias
                 natus cum sequi soluta at fuga hic, facere amet! Commodi, sit aperiam tempora soluta in maxime.</p>
             </div>
           </li>
         </ul>
+        </div>
+        <div class="reviews__navigation">
+          <button class="reviews__button-prev">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+                    <button class="reviews__button-next">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="section communication" data-test="form">
-      <div class="container">
+      <div class="container communication__container">
         <div class="communication__callback">
-          <h2 class="section__title">Бесплатное занятие</h2>
+          <h2 class="section__title communication__title">Бесплатное занятие</h2>
           <form class="communication__form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="communication__input" type="text" value="Имя" name="name" required>
-            <input class="communication__input" type="tel" value="Телефон" name="tel" required>
+            <label class="communication__label">
+              <span class="visually-hidden">Имя</span>
+              <input class="communication__input" type="text" value="Имя" name="name" required>
+            </label>
+            <label class="communication__label">
+              <span class="visually-hidden">Телефон</span>
+              <input class="communication__input" type="tel" value="Телефон" name="tel" required>
+            </label>
             <button class="communication__submit" type="submit">Отправить</button>
           </form>
         </div>
         <div class="communication__address address">
-          <h2 class="section__title">Контакты</h2>
+          <h2 class="section__title communication__title">Контакты</h2>
           <dl class="address__list">
             <div class="address__item">
               <dt class="address__title">Адрес:</dt>
