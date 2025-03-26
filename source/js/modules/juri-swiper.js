@@ -1,3 +1,5 @@
+import {Swiper} from '../vendor/swiper.js';
+
 function initJuriSwiper() {
   const juriSwiper = new Swiper(".juri__swiper", {
     loop: true,

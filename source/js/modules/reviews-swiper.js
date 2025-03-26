@@ -1,3 +1,5 @@
+import {Swiper} from '../vendor/swiper.js';
+
 function initReviewsSwiper() {
   const reviewsSwiper = new Swiper(".reviews__swiper", {
     slidesPerView: 1,

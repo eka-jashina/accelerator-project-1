@@ -1,0 +1,52 @@
+.address__list {
+    @include list-reset;
+
+    width: 100%;
+    column-count: 2;
+    column-rule: 1px solid #74819C;
+    column-gap: 120px;
+
+    @media (max-width: $tablet) {
+        column-gap: 60px;
+    }
+
+    @media (max-width: $mobile) {
+        column-count: 1;
+        column-gap: 0;
+      }
+}
+
+.address__item {
+    margin-bottom: 15px;
+}
+
+.address__title {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+
+    @media (max-width: $mobile) {
+        margin-bottom: 12px;
+
+        font-size: 20px;
+        line-height: 20px;
+      }
+}
+
+.address__description {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+
+    @media (max-width: $mobile) {
+        line-height: 20px;
+      }
+}
+
+.address__link {
+    @include link-reset;
+}

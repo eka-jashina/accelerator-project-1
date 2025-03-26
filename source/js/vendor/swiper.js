@@ -9819,3 +9819,5 @@ var Swiper = (function () {
   return Swiper;
 
 })();
+
+export {Swiper}

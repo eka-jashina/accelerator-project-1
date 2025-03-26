@@ -1,55 +1,101 @@
 .communication {
   padding: 60px 0;
 
-  background-color: #102654;
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+
+    @media (max-width: $tablet) {
+      background: linear-gradient(to bottom, #102654 50%, #ffffff 50%);
+    }
+
+    @media (max-width: $mobile) {
+      padding: 70px 0 40px;
+    }
 }
 
 .communication__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .communication__title {
   margin-bottom: 38px;
+
+  text-align: left;
+
+  @media (max-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .communication__callback {
+  padding-right: 103px;
   color: #ffffff;
+
+  @media (max-width: $tablet) {
+    max-width: 440px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 70px;
+  }
 }
 
 .communication__form {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px 38px;
+  gap: 36px 30px;
 }
 
-.communication__button {
+.communication__submit {
   @include button-reset;
+  @include link-into-button;
   @include button-effects-on-dark-background;
+}
 
-  width: 100%;
-  min-height: 66px;
-  padding: 5px;
+.communication__label {
+  width: calc((100% / 2) - 15px);
 
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-
-  border: 2px solid $text-light-color;
-
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
-    opacity 0.3s ease-in-out, border 0.3s ease-in-out;
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 .communication__input {
   padding-bottom: 4px;
-  min-width: 223px;
-
+  width: 100%;
+  min-height: 22px;
+  
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.4);
 
+  background-color: transparent;
+  border: none;
   border-bottom: 1px solid #74819c;
+}
+
+.communication__address {
+  position: relative;
+
+  padding-left: 103px;
+
+  @media (max-width: $tablet) {
+    max-width: 440px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    padding-top: 40px;
+  }
 }
