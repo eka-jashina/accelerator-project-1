@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 40px 0;
+    padding: 41px 0;
   }
 }
 
@@ -94,6 +94,10 @@
 
 .about__text p:not(:last-child) {
   margin-bottom: 8px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .about__text p:not(:first-child) {
