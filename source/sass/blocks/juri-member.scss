@@ -37,14 +37,12 @@
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.juri-member:hover .juri-member__wrapper,
-.juri-member:focus-visible .juri-member__wrapper {
+.juri-member:hover .juri-member__wrapper {
     background-color: rgba(16, 38, 84, 0.89);
     box-shadow: 0px 0px 35px 0px rgba(42, 59, 99, 0.17);
 }
 
-.juri-member:hover .juri-member__content,
-.juri-member:focus-visible .juri-member__content {
+.juri-member:hover .juri-member__content {
     max-height: 600px;
     opacity: 1;
 

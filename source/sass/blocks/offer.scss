@@ -120,19 +120,13 @@
 
 .offer__link {
   @include link-reset;
+  @include link-style;
   @include link-effects-on-light-background;
 
   align-self: flex-start;
   margin-top: auto;
-  padding-bottom: 5px;
 
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 700;
   color: #1c3374;
-  text-transform: uppercase;
-
-  border-bottom: 1px solid #74819c;
 
   @media (max-width: $mobile) {
     align-self: center;
@@ -143,7 +137,6 @@
   @include link-effects-on-dark-background;
 
   color: inherit;
-  border-color: inherit;
 }
 
 .offer__img {
