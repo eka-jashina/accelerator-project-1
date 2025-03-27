@@ -1,0 +1,32 @@
+.nav__list {
+    @include list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 82px;
+
+    @media (max-width: $tablet) {
+        gap: 20px 30px;
+    }
+
+    @media (max-width: $mobile) {
+        gap: 20px 35px;
+    }
+}
+
+.nav__link {
+    @include link-reset;
+    @include link-effects-on-dark-background;
+
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+
+    &:focus-visible {
+        outline-offset: 5px;
+    }
+
+    @media (max-width: $mobile) {
+        line-height: 20px;
+    }
+}

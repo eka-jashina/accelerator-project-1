@@ -1,6 +1,7 @@
 .review {
     display: flex;
     gap: 30px;
+    width: 560px;
     padding: 60px;
 
     color: #ffffff;
@@ -38,6 +39,7 @@
 
 .review p {
     margin: 0;
+    max-width: 330px;
 }
 
 .review p:not(:last-child) {

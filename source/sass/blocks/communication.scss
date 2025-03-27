@@ -64,6 +64,29 @@
 .communication__submit {
   @include button-reset;
   @include link-into-button;
+
+  &:hover {
+    color: #103aae;
+    background-color: #ffffff;
+  }
+
+  &:focus-visible {
+    color: #103aae;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #000000;
+    outline: 0;
+  }
+
+  &:active {
+    color: #102654;
+    background-color: #ffffff;
+    border: 2px solid $text-light-color;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .communication__label {
@@ -82,11 +105,34 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.4);
 
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #74819c;
+
+  transition: 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  &:hover {
+    border-bottom: 1px solid #ffffff;
+
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+
+  &:focus-visible {
+    border: none;
+    outline: 1px solid #ffffff;
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
 }
 
 .communication__address {
