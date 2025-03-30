@@ -11,6 +11,11 @@
 
     line-height: 24px;
   }
+
+  @media (max-width: $mobile) {
+    row-gap: 5px;
+    min-width: 56px;
+  }
 }
 
 .games-duration__title {
@@ -24,12 +29,22 @@
     padding-bottom: 1px;
     margin-bottom: 1px;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+  }
 }
 
 .games-duration__item--date .games-duration__text {
   display: flex;
   gap: 6px;
   align-items: center;
+
+  @media (max-width: $mobile) {
+    gap: 4px;
+  }
 }
 
 .games-duration__day,
@@ -48,5 +63,12 @@
   @media (max-width: $tablet) {
     max-width: 60px;
     font-size: 14px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 32px;
+
+    font-size: 12px;
+    line-height: 13px;
   }
 }

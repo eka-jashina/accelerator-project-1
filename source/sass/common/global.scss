@@ -19,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 320px;
   margin: 0 auto;
 
   font-family: $basic-font;
@@ -33,6 +34,10 @@ body {
   @media (max-width: $mobile) {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  @media (width <= 319px) {
+    overflow-x: scroll;
   }
 }
 
@@ -80,7 +85,7 @@ body {
 }
 
 .container {
-  max-width: 1366px;
+  width: 1366px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 103px;

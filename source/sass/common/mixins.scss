@@ -167,13 +167,11 @@
   }
 
   &:active {
+    color: #1c3374;
+
     &::after {
       background-color: $background-dark-secondary;
     }
-  }
-
-  &:active {
-    color: #1c3374;
   }
 
   &:not([href]) {

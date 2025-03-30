@@ -1,6 +1,6 @@
 .games {
   @media (max-width: $mobile) {
-    padding: 24px 0 30px;
+    padding: 25px 0 30px;
   }
 }
 
@@ -32,7 +32,7 @@
   }
 
   @media (max-width: $mobile) {
-    gap: 16px 37px;
+    gap: 16px 55px;
   }
 }
 
@@ -60,6 +60,13 @@
   @media (max-width: $tablet) {
     margin-bottom: 1px;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .games__button {
@@ -67,6 +74,10 @@
   @include button-effects-on-dark-background;
 
   grid-area: button;
+
+  @media (max-width: $mobile) {
+    min-height: 60px;
+  }
 }
 
 .games__img {

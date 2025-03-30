@@ -1,5 +1,5 @@
 .callback {
-  min-width: 683px;
+  width: 683px;
   margin-left: auto;
   padding: 60px 0;
 
@@ -7,7 +7,7 @@
   background-color: $background-dark-primary;
 
   @media (max-width: $tablet) {
-    min-width: auto;
+    width: auto;
     margin-left: 0;
   }
 
@@ -17,6 +17,8 @@
 }
 
 .callback__container {
+  max-width: 683px;
+
   @media (max-width: $tablet) {
     width: 440px;
     margin: 0 auto;

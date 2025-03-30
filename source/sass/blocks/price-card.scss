@@ -90,10 +90,11 @@
     width: 30px;
     height: 42px;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../../img/sprite/rub-icon.svg");
+    background-color: #102654;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-image: url("/__spritemap#sprite-rub-icon-view");
   }
 
   @media (max-width: $mobile) {

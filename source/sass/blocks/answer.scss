@@ -42,7 +42,7 @@
     width: 40px;
     height: 40px;
 
-    background-image: url("../../img/sprite/plus-dark.svg");
+    background-image: url("/__spritemap#sprite-plus-dark-view");
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,20 +78,22 @@
 .answer__button.answer--open {
   &::before {
     background-color: $background-dark-secondary;
-    background-image: url("../../img/sprite/minus-light.svg");
+    background-size: 20px 1px;
+    background-image: url("/__spritemap#sprite-minus-light-view");
   }
 }
 
 .answer__button:hover {
   &::before {
     background-color: $background-dark-secondary;
-    background-image: url("../../img/sprite/plus-light.svg");
+    background-image: url("/__spritemap#sprite-plus-light-view");
   }
 }
 
 .answer__button.answer--open:hover {
   &::before {
-    background-image: url("../../img/sprite/minus-light.svg");
+    background-size: 20px 1px;
+    background-image: url("/__spritemap#sprite-minus-light-view");
   }
 }
 
@@ -100,7 +102,7 @@
 
   &::before {
     background-color: #74819c;
-    background-image: url("../../img/sprite/plus-light.svg");
+    background-image: url("/__spritemap#sprite-plus-light-view");
   }
 }
 
