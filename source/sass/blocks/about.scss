@@ -126,12 +126,13 @@
   width: 360px;
   height: 230px;
 
-  background-image: image-set(
-    url("../../img/about-video-desktop@1x.webp") type("image/webp") 1x,
-    url("../../img/about-video-desktop@2x.webp") type("image/webp") 2x,
-    url("../../img/about-video-desktop@1x.jpg") type("image/jpeg") 1x,
-    url("../../img/about-video-desktop@2x.jpg") type("image/jpeg") 2x
-  );
+  background-image:
+    image-set(
+      url("../../img/about-video-desktop@1x.webp") type("image/webp") 1x,
+      url("../../img/about-video-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/about-video-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/about-video-desktop@2x.jpg") type("image/jpeg") 2x
+    );
 
   transform: translateX(-50%);
 
@@ -139,12 +140,13 @@
     width: 270px;
     height: 170px;
 
-    background-image: image-set(
-      url("../../img/about-video-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/about-video-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/about-video-tablet@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/about-video-tablet@2x.jpg") type("image/jpeg") 2x
-    );
+    background-image:
+      image-set(
+        url("../../img/about-video-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/about-video-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/about-video-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/about-video-tablet@2x.jpg") type("image/jpeg") 2x
+      );
   }
 
   @media (max-width: $mobile) {
@@ -152,11 +154,12 @@
     width: 320px;
     height: 170px;
 
-    background-image: image-set(
-      url("../../img/about-video-mobile@1x.webp") type("image/webp") 1x,
-      url("../../img/about-video-mobile@2x.webp") type("image/webp") 2x,
-      url("../../img/about-video-mobile@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/about-video-mobile@2x.jpg") type("image/jpeg") 2x
-    );
+    background-image:
+      image-set(
+        url("../../img/about-video-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/about-video-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/about-video-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/about-video-mobile@2x.jpg") type("image/jpeg") 2x
+      );
   }
 }

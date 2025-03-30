@@ -1,21 +1,23 @@
 .price {
-  background-color: #f8f9fc;
+  background-color: $background-secondary-color;
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-image: image-set(
-    url("../../img/price-bg-decor-desktop@1x.webp") type("image/webp") 1x,
-    url("../../img/price-bg-decor-desktop@2x.webp") type("image/webp") 2x,
-    url("../../img/price-bg-decor-desktop@1x.png") type("image/png") 1x,
-    url("../../img/price-bg-decor-desktop@2x.png") type("image/png") 2x
-  );
+  background-image:
+    image-set(
+      url("../../img/price-bg-decor-desktop@1x.webp") type("image/webp") 1x,
+      url("../../img/price-bg-decor-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/price-bg-decor-desktop@1x.png") type("image/png") 1x,
+      url("../../img/price-bg-decor-desktop@2x.png") type("image/png") 2x
+    );
 
   @media (max-width: $tablet) {
-    background-image: image-set(
-      url("../../img/price-bg-decor-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/price-bg-decor-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/price-bg-decor-tablet@1x.png") type("image/png") 1x,
-      url("../../img/price-bg-decor-tablet@2x.png") type("image/png") 2x
-    );
+    background-image:
+      image-set(
+        url("../../img/price-bg-decor-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/price-bg-decor-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/price-bg-decor-tablet@1x.png") type("image/png") 1x,
+        url("../../img/price-bg-decor-tablet@2x.png") type("image/png") 2x
+      );
   }
 
   @media (max-width: $mobile) {
@@ -38,7 +40,8 @@
 .price__time {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
   max-width: 350px;
   margin: 0 auto 38px;
 
@@ -46,10 +49,13 @@
 
   @media (max-width: $tablet) {
     max-width: 310px;
+    gap: 43px;
     margin-bottom: 45px;
   }
 
   @media (max-width: $mobile) {
+    justify-content: space-between;
+    gap: 10px;
     margin-bottom: 30px;
   }
 }
@@ -74,7 +80,7 @@
   &:focus-visible {
     outline: none;
     opacity: 1;
-    box-shadow: 0 2px 0 0 #102654;
+    box-shadow: 0 2px 0 0 $dark-border-primary;
   }
 
   &:disabled {
@@ -100,11 +106,12 @@
 
 .price__list {
   @include list-reset;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
-  animation: fadeEffect 1s;
+  animation: fade-effect 1s;
 
   @media (max-width: $tablet) {
     grid-template-columns: 1fr;

@@ -8,7 +8,7 @@
   display: flex;
   background-clip: content-box;
 
-  background-color: #ed0233;
+  background-color: $background-banner-color;
 
   @media (max-width: $mobile) {
     flex-direction: column;
@@ -24,13 +24,12 @@
   padding: 60px 80px;
 
   font-size: 18px;
-  color: #ffffff;
+  color: $text-light-color;
 
   @media (max-width: $tablet) {
     padding: 40px;
     gap: 9px 18px;
   }
-
 
   @media (max-width: $mobile) {
     gap: 16px 37px;

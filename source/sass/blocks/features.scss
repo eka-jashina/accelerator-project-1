@@ -1,3 +1,7 @@
+.features {
+  background-color: $background-secondary-color;
+}
+
 .features__title {
   margin-bottom: 56px;
 
@@ -24,7 +28,7 @@
 
   @media (max-width: $mobile) {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 33px;
   }
 }
 
@@ -71,6 +75,11 @@
 
   @media (max-width: $tablet) {
     margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 64px;
+    line-height: 64px;
   }
 }
 
@@ -122,9 +131,9 @@
   min-height: 300px;
   padding: 5px;
 
-  color: #ffffff;
+  color: $text-light-color;
 
-  background-color: #1c3374;
+  background-color: $background-dark-secondary;
 
   @media (max-width: $tablet) {
     grid-column: 1 / 3;
@@ -137,15 +146,23 @@
   @media (max-width: $mobile) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    justify-content: start;
     min-height: 225px;
-    margin: 0 -15px;
+    margin: 5px -15px;
+    padding: 30px 0;
+  }
+}
+
+.features__item--accent dt {
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
   }
 }
 
 .features__item--accent span {
   margin-bottom: 10px;
 
-  background: #ffffff;
+  background: $background-main-color;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -172,6 +189,13 @@
     font-size: 24px;
     line-height: 24px;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 22px;
+
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .features__item--accent p {
@@ -181,5 +205,9 @@
 
   @media (max-width: $tablet) {
     max-width: 250px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 170px;
   }
 }

@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smoth;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -25,9 +25,10 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-  color: #102654;
+  color: $text-main-color;
 
-  background-color: #ffffff;
+  background-color: $background-main-color;
+  overflow-x: hidden;
 
   @media (max-width: $mobile) {
     font-size: 14px;
@@ -110,7 +111,12 @@ body {
   overflow: hidden;
 }
 
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+@keyframes fade-effect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

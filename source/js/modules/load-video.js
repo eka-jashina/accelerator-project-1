@@ -12,8 +12,8 @@ function loadVideo() {
     height: '100%',
   });
 
-  videoWrapper.classList.add("video--playing");
-  videoWrapper.style.background = "none";
+  videoWrapper.classList.add('video--playing');
+  videoWrapper.style.background = 'none';
   videoButton.remove();
 
   iframe.onload = () => {
@@ -23,4 +23,4 @@ function loadVideo() {
   videoContainer.appendChild(iframe);
 }
 
-export { videoButton, loadVideo }
+export { videoButton, loadVideo };

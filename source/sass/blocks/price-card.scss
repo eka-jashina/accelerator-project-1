@@ -5,7 +5,7 @@
   align-items: center;
   row-gap: 17px;
   padding: 65px;
-  background-color: #ffffff;
+  background-color: $background-main-color;
   z-index: 1;
 
   @media (max-width: $tablet) {
@@ -23,17 +23,15 @@
   position: absolute;
   inset: 0;
   padding: 7px;
-  background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
-  mask:
-    linear-gradient(#ffffff 0 0) content-box,
-    linear-gradient(#ffffff 0 0);
+  background: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#ffffff 0 0);
   mask-composite: exclude;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: -1;
 }
 
-.price-card:has(.price-card__button:hover)::before,
+.price-card:hover::before,
 .price-card:has(.price-card__button:focus-visible)::before {
   opacity: 1;
 }
@@ -68,7 +66,7 @@
   font-size: 60px;
   line-height: 150%;
   font-weight: 700;
-  color: #103AAE;
+  color: $text-accent-color;
 
   &::before {
     content: attr(data-text);
@@ -80,7 +78,7 @@
     font-size: 100px;
     line-height: 150%;
     font-weight: 700;
-    color: #E8E8E8;
+    color: #e8e8e8;
   }
 
   &::after {
@@ -123,5 +121,5 @@
   @include link-into-button;
   @include button-effects-on-light-background;
 
-  border-color: #102654;
+  border-color: $dark-border-primary;
 }

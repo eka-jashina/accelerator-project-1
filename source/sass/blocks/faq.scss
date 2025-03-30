@@ -1,5 +1,9 @@
 .faq {
-  background-color: #f8f9fc;
+  background-color: $background-secondary-color;
+
+  @media (max-width: $mobile) {
+    padding-top: 70px;
+  }
 }
 
 .faq__container {
@@ -13,7 +17,7 @@
   }
 
   @media (max-width: $mobile) {
-    row-gap: 35px;
+    row-gap: 34px;
   }
 }
 
@@ -65,16 +69,16 @@
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
   &:hover {
-    border: 1px solid #102654
+    border: 1px solid $dark-border-primary;
   }
 
   &:focus-visible {
-    border: 1px solid #102654;
+    border: 1px solid $dark-border-primary;
     background-color: #ffffff;
   }
 
   &:disabled {
-    color: #C8C9CC;
+    color: #c8c9cc;
   }
 
   @media (max-width: $tablet) {
@@ -93,7 +97,7 @@
   position: relative;
   z-index: 1;
 
-  color: #ffffff;
+  color: $text-light-color;
 
   &::before {
     content: "";
@@ -101,7 +105,7 @@
     inset: 0;
     z-index: -1;
 
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     opacity: 1;
 
     transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -129,5 +133,5 @@
 
   border-top: 1px solid #74819c;
 
-  //animation: fadeEffect 1s;
+  animation: fade-effect 1s;
 }
