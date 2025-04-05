@@ -6,7 +6,7 @@ const telError = telInput.parentElement.querySelector('.error--tel');
 // Функция для показа ошибки
 const showError = (errorElement, message, input) => {
   errorElement.textContent = message;
-  errorElement.style.display = 'block';
+  errorElement.style.display = 'inline-block';
   input.style.borderBottom = '1px solid #ff121f';
   input.value = '';
 };

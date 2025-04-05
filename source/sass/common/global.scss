@@ -29,15 +29,10 @@ body {
   color: $text-main-color;
 
   background-color: $background-main-color;
-  overflow-x: hidden;
 
   @media (max-width: $mobile) {
     font-size: 14px;
     line-height: 22px;
-  }
-
-  @media (width <= 319px) {
-    overflow-x: scroll;
   }
 }
 
